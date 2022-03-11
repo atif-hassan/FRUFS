@@ -2,6 +2,7 @@
 [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/atif-hassan/)
 
 [![PyPI version shields.io](https://img.shields.io/pypi/v/FRUFS.svg)](https://pypi.python.org/pypi/FRUFS/)
+[![Downloads](https://pepy.tech/badge/FRUFS)](https://pepy.tech/project/FRUFS)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/atif-hassan/FRUFS/commits)
 # FRUFS: Feature Relevance based Unsupervised Feature Selection
 FRUFS stands for Feature Relevance based Unsupervised Feature Selection and is an unsupervised feature selection technique that uses supervised algorithms such as XGBoost to rank features based on their importance. **The entire algorithm is explained in the [following blog](https://www.deepwizai.com/projects/how-to-perform-unsupervised-feature-selection-using-supervised-algorithms)**
