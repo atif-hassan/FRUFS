@@ -5,7 +5,7 @@
 [![Downloads](https://pepy.tech/badge/FRUFS)](https://pepy.tech/project/FRUFS)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/atif-hassan/FRUFS/commits)
 # FRUFS: Feature Relevance based Unsupervised Feature Selection
-FRUFS stands for Feature Relevance based Unsupervised Feature Selection and is an unsupervised feature selection technique that uses supervised algorithms such as XGBoost to rank features based on their importance. **The entire algorithm is explained in the [following blog](https://www.deepwizai.com/projects/how-to-perform-unsupervised-feature-selection-using-supervised-algorithms)**
+FRUFS stands for Feature Relevance based Unsupervised Feature Selection and is an unsupervised feature selection technique that uses supervised algorithms such as XGBoost to rank features based on their importance. **The entire algorithm is explained in the [following blog](https://www.deepwizai.com/projects/how-to-perform-unsupervised-feature-selection-using-supervised-algorithms)** Here is a [Kaggle notebook](https://www.kaggle.com/code/marketneutral/frufs-unsupervised-selection/notebook) trying out FRUFS on a competition, replete with simulations using synthetic data as well.
 
 ## How to install?
 ```pip install FRUFS```
