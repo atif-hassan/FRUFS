@@ -69,8 +69,8 @@ from FRUFS import FRUFS
 model_frufs = FRUFS(model_r=LGBMRegressor(random_state=27), model_c=LGBMClassifier(random_state=27, class_weight="balanced"), categorical_features=categorical_features, k=13, n_jobs=-1, verbose=0, random_state=27)
 # The fit_transform function is a wrapper for the fit and transform functions, individually.
 # The fit function ranks the features and the transform function prunes the dataset to selected set of features
-df_train_pruned = model.fit_transform(df_train)
-df_test_pruned = model.transform(df_test)
+df_train_pruned = model_frufs.fit_transform(df_train)
+df_test_pruned = model_frufs.transform(df_test)
 # Get a plot of the feature importance scores
 model_frufs.feature_importance()
 ```
@@ -83,8 +83,8 @@ from FRUFS import FRUFS
 model_frufs = FRUFS(model_r=LGBMRegressor(random_state=27), model_c=LGBMClassifier(random_state=27, class_weight="balanced"), categorical_features=categorical_features, k=13, n_jobs=-1, verbose=0, random_state=27)
 # The fit_transform function is a wrapper for the fit and transform functions, individually.
 # The fit function ranks the features and the transform function prunes the dataset to selected set of features
-X_train_pruned = model.fit_transform(X_train)
-X_test_pruned = model.transform(X_test)
+X_train_pruned = model_frufs.fit_transform(X_train)
+X_test_pruned = model_frufs.transform(X_test)
 # Get a plot of the feature importance scores
 model_frufs.feature_importance()
 ```
