@@ -144,9 +144,13 @@ class FRUFS(TransformerMixin, BaseEstimator):
 
 
     # Check out the feature importance scores
-    def feature_importance(self):
-        y_axis = np.arange(len(self.columns_))
-        x_axis = self.feat_imps_
+    def feature_importance(self, top_x_feats=None):
+        if top_x_feats is not None:
+            y_axis = np.arange(top_x_feats)
+            x_axis = self.feat_imps_[:top_x_feats]
+        else:
+            y_axis = np.arange(len(self.columns_))
+            x_axis = self.feat_imps_
 
         # This dashed line indicates the cut-off point for your features.
         # All features below this line have been pruned
