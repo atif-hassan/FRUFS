@@ -159,9 +159,9 @@ class FRUFS(TransformerMixin, BaseEstimator):
         sns.barplot(x=x_axis, y=y_axis, orient="h")
         # Use feature names if already provided or generate synthetic ones
         if type(self.columns_[0]) == str:
-            plt.yticks(y_axis, self.columns_, size='small')
+            plt.yticks(y_axis, self.columns_[:len(y_axis)], size='small')
         else:
-            plt.yticks(y_axis, ["Feature "+str(i) for i in self.columns_], size='small')
+            plt.yticks(y_axis, ["Feature "+str(i) for i in self.columns_[:len(y_axis)]], size='small')
         plt.xlabel("Importance Scores")
         plt.ylabel("Features")
         sns.despine()
