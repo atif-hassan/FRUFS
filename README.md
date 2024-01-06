@@ -52,8 +52,10 @@ fit_transform(data)
 
 ```python
 # To plot XGBoost style feature importance
-feature_importance()
+feature_importance(top_x_feats)
 ```
+- **top_x_feats** - Default value ```None```. Setting a value between 0 and the number of features will display only\
+those number of features in the bar plot. Not passing any value replicates default behaviour of displaying all features.
 
 ## How to import?
 ```python
